@@ -10,6 +10,7 @@ https://github.com/free-educa/books/blob/main/books/Controlando%20vers%C3%B5es%2
 
 # Git stylesheet:
 
+```git
 add all files in stage:
 git add .
 
@@ -216,3 +217,4 @@ git push <remote> <tag_name>
 
 push all tags:
 git push <remote> --tags
+```
