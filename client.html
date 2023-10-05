@@ -35,9 +35,13 @@
         renderScreen();
 
         function renderScreen() {
+
+            // reset screen
+            context.fillStyle = 'white';
+            context.fillRect(0,0,10,10);
+
             for (playerId in game.players) {
                 const player = game.players[playerId];
-                console.log(player)
                 context.fillStyle = 'black'
                 context.fillRect(player.x, player.y, 1, 1)
             }
@@ -47,12 +51,16 @@
                 context.fillStyle = 'green';
                 context.fillRect(fruit.x, fruit.y, 1, 1);
             }
+
+            requestAnimationFrame(renderScreen);
         }
     </script>
 </body>
 </html>
 
-<!-- const color = 'red';
+<!-- 
+    requestAnimationFrame
+    const color = 'red';
     const posX = 0
     const posY = 0
     const width = 250
